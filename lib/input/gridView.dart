@@ -11,12 +11,12 @@ class Gridv extends StatelessWidget {
         ),
         body:
       GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
-              crossAxisSpacing: 25,
-        mainAxisSpacing: 25
+          crossAxisCount: 2,
+              crossAxisSpacing: 10,
+        mainAxisSpacing: 10
       ),
 
-          itemCount: 10,
+          itemCount: 4,
           itemBuilder: (context,index){
               return Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -48,6 +48,8 @@ class Gridv extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+
+
                     Icon(Icons.phone, size: 40, color: Colors.white),
                     Text(
                       'Phone-${index}',

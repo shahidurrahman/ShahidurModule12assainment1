@@ -81,6 +81,7 @@ class Login extends StatelessWidget {
                       child: Text('Submint'),
                     ),
                   ),
+                  ElevatedButton(onPressed: (){ Navigator.pushNamed(context, 'button1'); }, child: Text('Button')),
                   ElevatedButton(onPressed: (){
                     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Home2()));
 

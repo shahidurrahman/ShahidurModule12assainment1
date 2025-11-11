@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 
+import 'Assinment/module12Assinment1.dart';
 import 'Button/button_1.dart';
 import 'home.dart';
 import 'input/Dashboard.dart';
 import 'input/Container.dart';
+import 'input/Listviewsh.dart';
 import 'input/assinment2.dart';
 import 'input/assinment222.dart';
 import 'input/gridView.dart';
 import 'input/inputdata.dart';
 import 'input/livetest2.dart';
 import 'input/login.dart';
+import 'input/stacklist.dart';
 import 'input/themTest.dart';
 
 class MyApp extends StatelessWidget {
@@ -59,7 +62,20 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData.light(),
       title: 'shahidur new project',
       //home: CardViewAssinment(),
-      home: Contactlist(),
+      home: Calculator(),
+      initialRoute: 'Calculator',
+      routes:
+      {
+        'home' : (context)=>Home(),
+        'button1' : (context)=>Buttongrp(),
+        'listt' : (context)=>Flist(),
+        'stackk' : (context)=>Stacklistt(),
+        'Calculators' : (context)=>Calculator(),
+
+
+
+      }
+      ,
     );
   }
 }

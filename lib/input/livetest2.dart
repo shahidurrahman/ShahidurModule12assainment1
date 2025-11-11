@@ -7,10 +7,15 @@ class Contactlist extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Contact List')),
-      body: Padding(
+      body:
+
+
+      Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
+
+
             TextField(
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
@@ -37,7 +42,12 @@ class Contactlist extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
                   onPressed: () {}, child: Text('Add')),
+
             ),
+
+
+
+
 
 
                 ListView.builder(
